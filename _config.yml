@@ -1,23 +1,23 @@
 # Site
-repository: sproogen/resume-theme
+repository: loicdiridollou.github.io
 favicon: images/favicon.ico
 
 # Personal info
-name: Brett Harris
-title: Senior Network System Administrator
-email: brett.h@email.co.uk
-website: www.github.com/sproogen/resume-theme
+name: Loic Diridollou
+title: MFE Student at UC Berkeley - Class of 2021
+email: loic_diridollou@mfe.berkeley.edu
+website: loicdiridollou.github.io
 
 # Social links
-twitter_username: facespics
-github_username:  sproogen
+twitter_username: loicdiridollou
+github_username:  loicdiridollou
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
-instagram_username: chillwildlife
-linkedin_username: jameswgrant
+instagram_username: loic_diri
+linkedin_username: loicdiridollou
 # pinterest_username: jekyll
-youtube_username: globalmtb
+#youtube_username: globalmtb
 # googleplus_username: +jekyll
 
 # About Section
