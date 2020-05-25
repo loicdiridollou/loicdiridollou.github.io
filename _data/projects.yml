@@ -1,9 +1,9 @@
 - layout: top-middle
   name: Evaluation of different models for price prediction
-  link: github.com/sproogen
-  github: sproogen/resume-theme
+  link: github.com/loicdiridollou/airbnb-nyc-price-prediction
+  github: loicdiridollou/airbnb-nyc-price-prediction
   quote: >
-    This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+    Comparing different methods to predict AirBnB prices in New York City, regression, random forest, XGBoost, neural networks
   description: | # this will include new lines to allow paragraphs
     I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
@@ -12,7 +12,7 @@
   link: github.com/sproogen
   github: sproogen/resume-theme
   quote: >
-    This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+    Clustering customer data to identify and profile a certain type of customer that will conduct a precise banking operation
   description: | # this will include new lines to allow paragraphs
     I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
@@ -21,16 +21,16 @@
   link: github.com/sproogen
   github: sproogen/resume-theme
   quote: >
-    This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+    Transfer learning applied to bird recognition
   description: | # this will include new lines to allow paragraphs
     I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
 - layout: top-middle
   name: Performance assessment of option pricing methodologies
-  link: github.com/sproogen
-  github: sproogen/resume-theme
+  link: github.com/loicdiridollou/mc_simulation
+  github: loicdiridollou/mc_simulation
   quote: >
-    This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+    Computational analysis of different option pricing methodologies based on Monte Carlo simulation (academic project)
   description: | # this will include new lines to allow paragraphs
     I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
 
@@ -39,6 +39,6 @@
   link: github.com/sproogen
   github: sproogen/resume-theme
   quote: >
-    This is probably one of the greatest apps ever created, if you don't agree you're probably wrong.
+    First overview of computer vision and facial recognition mixed with my favorite TV series Suits
   description: | # this will include new lines to allow paragraphs
     I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
