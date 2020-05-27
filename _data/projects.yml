@@ -5,8 +5,9 @@
   quote: >
     Comparing different methods to predict AirBnB prices in New York City, regression, random forest, XGBoost, neural networks
   description: | # this will include new lines to allow paragraphs
-    Using a dataset from AirBnb Open Data, I conducted performance comparisons to predict the prices of stay. The best performance was achieved 
-    with a five Dense-layer network with regularisation and dropout with an accuracy of 70% while the XGBoost only achieved 68%.
+    Using a dataset from AirBnb Open Data, I conducted performance comparisons to predict the prices of stay. 
+    The best performance was achieved with a five Dense-layer network with regularisation and dropout with an 
+    accuracy of 70% while the XGBoost only achieved 68%.
 
 - layout: top-middle
   name: Feature engineering and machine learning clustering
@@ -15,8 +16,9 @@
   quote: >
     Clustering customer data to identify and profile a certain type of customer that will conduct a precise banking operation
   description: | # this will include new lines to allow paragraphs
-    Using Santander customer data, the goal of this project was to explore different classification methods to predict a certain type of banking transactions.
-    The best model was a combination of using XGBoost model and StratifiedKFold cross validation.
+    Using Santander customer data, the goal of this project was to explore different classification methods to predict a 
+    certain type of banking transactions. The best model was a combination of using XGBoost model and StratifiedKFold cross 
+    validation.
 
 - layout: top-middle
   name: Bird species classifier with transfer learning
@@ -26,6 +28,8 @@
     Transfer learning applied to bird recognition
   description: | # this will include new lines to allow paragraphs
     The idea of this project was to explore the difference between the model that I would build on my own and a model that 
+    has already been trained. In the field of computer vision, the model needs a lot of data and training to perform well 
+    so without surprise the pretrained model (ImageNet18) surpassed the locally built model.
 
 - layout: top-middle
   name: Performance assessment of option pricing methodologies
@@ -34,7 +38,10 @@
   quote: >
     Computational analysis of different option pricing methodologies based on Monte Carlo simulation (academic project)
   description: | # this will include new lines to allow paragraphs
-    I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+    This project explored different variations of Monte Carlo simulations. The different analysis revealed that a Quasi 
+    Random Monte Carlo Simulation was the one that performed the best among the different ones (antithetic variables, Quasi 
+    MC, Random MC, ...). This project was conducted with the Black-Scholes European Call closed form as a benchmark and two 
+    metrics were tracked for performance assessment: speed of convergence and variance of results.
 
 - layout: top-middle
   name: Facial recognition, deep learning model and statistical analysis
@@ -43,4 +50,7 @@
   quote: >
     First overview of computer vision and facial recognition mixed with my favorite TV series Suits
   description: | # this will include new lines to allow paragraphs
-    I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+    I started this project to introduce myself to computer vision. I am also a fan of Suits and I thought joining the two ends
+    could be a great way to move forward with this project. I thus designed a face recognitiion using YOLO algorithm and open-
+    cv. The idea was to identify the face in the image (treating the TV series as a sequence of images) and later identifying
+    the faces of the character. It achieved a really good performance in recognizing faces with a 97% accuracy.
