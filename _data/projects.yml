@@ -5,7 +5,8 @@
   quote: >
     Comparing different methods to predict AirBnB prices in New York City, regression, random forest, XGBoost, neural networks
   description: | # this will include new lines to allow paragraphs
-    I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+    Using a dataset from AirBnb Open Data, I conducted performance comparisons to predict the prices of stay. The best performance was achieved 
+    with a five Dense-layer network with regularisation and dropout with an accuracy of 70% while the XGBoost only achieved 68%.
 
 - layout: top-middle
   name: Feature engineering and machine learning clustering
@@ -14,7 +15,8 @@
   quote: >
     Clustering customer data to identify and profile a certain type of customer that will conduct a precise banking operation
   description: | # this will include new lines to allow paragraphs
-    I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+    Using Santander customer data, the goal of this project was to explore different classification methods to predict a certain type of banking transactions.
+    The best model was a combination of using XGBoost model and StratifiedKFold cross validation.
 
 - layout: top-middle
   name: Bird species classifier with transfer learning
@@ -23,7 +25,7 @@
   quote: >
     Transfer learning applied to bird recognition
   description: | # this will include new lines to allow paragraphs
-    I started this project as a way if learning <mark>React</mark> and it has since grown into a fully fledged app. I have learned many skills through this and been I'm very proud of having this in my portfolio. If you don't have a project as awesome as this I would advise you make one.
+    The idea of this project was to explore the difference between the model that I would build on my own and a model that 
 
 - layout: top-middle
   name: Performance assessment of option pricing methodologies
