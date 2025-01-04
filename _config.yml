@@ -3,21 +3,21 @@ repository: loicdiridollou.github.io
 favicon: images/favicon.ico
 
 # Personal info
-name: Loic Diridollou
-title: MFE Student at UC Berkeley - Class of 2021
+name: Loïc Diridollou
+title: Quantitative Researcher at Brevan Howard
 email: loic_diridollou@mfe.berkeley.edu
 website: loicdiridollou.github.io
 
 # Social links
 twitter_username: loicdiridollou
-github_username:  loicdiridollou
+github_username: loicdiridollou
 # dribbble_username: jekyll
 # facebook_username: jekyll
 # flickr_username: jekyll
 linkedin_username: loicdiridollou
-instagram_username: loic_diri
+# instagram_username: loic_diri
 # pinterest_username: jekyll
-#youtube_username: globalmtb
+# youtube_username: globalmtb
 # googleplus_username: +jekyll
 
 # About Section
@@ -28,9 +28,8 @@ about_content: | # this will include new lines to allow paragraphs
   His internship experience includes asset management, equity trading and quantitative research. While at the Dutch investment bank Kempen, he worked on several data science and machine learning projects to help traders identify signals. Then, in a quantitative research role at EY Advisory, he was responsible for developing and calibrating a local volatility model that improved option pricing precision as well as working on call-spread options P&L calculations and client engagements for major French banks.
   Loic enjoys exploring innovative methodologies with machine learning such as evolution strategies for trading and deep learning for options pricing. He also has a keen interest in systematic trading and quantitative strategies. Loic spends his free time reading economic news and studying geopolitics; he is also a longtime sailor and sailing instructor.
 
-  
-  I am most skilled in: <mark>Python</mark> and <mark>Machine Learning</mark>
 
+  I am most skilled in: <mark>Python</mark> and <mark>Machine Learning</mark>
 
 # Experience Section
 # experience_title: Experience
@@ -41,7 +40,6 @@ about_content: | # this will include new lines to allow paragraphs
 # Projects Section
 # projects_title: Projects (In progress)
 
-
 # More Section
 # more_title: A Little More About Me
 more_content: | # this will include new lines to allow paragraphs
@@ -49,7 +47,6 @@ more_content: | # this will include new lines to allow paragraphs
   - Sailing
   - Photography
   - Geopolitics
-
 
 # Footer
 footer_show_references: true
@@ -62,4 +59,4 @@ sass:
   style: compressed
 
 plugins:
- - jekyll-seo-tag
+  - jekyll-seo-tag
