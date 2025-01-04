@@ -1,17 +1,44 @@
 - layout: left
-  company: EY Advisory
-  link: ey.com
-  job_title: Quantitative Advisory Intern
-  dates: Sept 2019 - Febr 2020
+  company: Brevan Howard
+  link: brevanhoward.com
+  job_title: Quantitative Researcher
+  dates: Aug 2024 - Now
   quote: >
-   Helping the Risk Service Line serves its clients through the research and implementation of asset pricing models
+    Helping the Risk Service Line serves its clients through the research and implementation of asset pricing models
   description: | # this will include new lines to allow paragraphs
     I lead a project on researching and developing a model for local volatility in the field of Vanilla options. 
     The project focused on taking in consideration the smile of volatility observed in the market, the evaluation of the model
     was conducted through the comparison of different pricing with generated and real data (to offer a wider understanding of 
     the performance). Furthermore I also contributed to different client engagements to support the team and provide help on 
     specific asset valuation of equility-linked swaps for a top tier French bank using multiple data sources.
-    
+
+- layout: left
+  company: Centiva Capital
+  link: centivacapital.com
+  job_title: Quantitative Researcher
+  dates: Oct 2020 - July 2024
+  quote: >
+    Helping the Risk Service Line serves its clients through the research and implementation of asset pricing models
+  description: | # this will include new lines to allow paragraphs
+    I lead a project on researching and developing a model for local volatility in the field of Vanilla options. 
+    The project focused on taking in consideration the smile of volatility observed in the market, the evaluation of the model
+    was conducted through the comparison of different pricing with generated and real data (to offer a wider understanding of 
+    the performance). Furthermore I also contributed to different client engagements to support the team and provide help on 
+    specific asset valuation of equility-linked swaps for a top tier French bank using multiple data sources.
+
+- layout: left
+  company: EY Advisory
+  link: ey.com
+  job_title: Quantitative Advisory Intern
+  dates: Sept 2019 - Febr 2020
+  quote: >
+    Helping the Risk Service Line serves its clients through the research and implementation of asset pricing models
+  description: | # this will include new lines to allow paragraphs
+    I lead a project on researching and developing a model for local volatility in the field of Vanilla options. 
+    The project focused on taking in consideration the smile of volatility observed in the market, the evaluation of the model
+    was conducted through the comparison of different pricing with generated and real data (to offer a wider understanding of 
+    the performance). Furthermore I also contributed to different client engagements to support the team and provide help on 
+    specific asset valuation of equility-linked swaps for a top tier French bank using multiple data sources.
 
 - layout: left
   company: Kempen & Co.
@@ -19,7 +46,7 @@
   job_title: Equity Trading Intern
   dates: June 2019 - Aug 2019
   quote: >
-   Studying machine learning models to extract market signals in the field of life science company trading
+    Studying machine learning models to extract market signals in the field of life science company trading
   description: | # this will include new lines to allow paragraphs
     As an Equity Trading Intern, my work focused on bringing data-driven approaches to stock picking and helping traders identify
     opportunities in the trading of life science companies. I was in charge of developing APIs, building data pipelines and asessing 
@@ -32,7 +59,7 @@
   job_title: Credit Portfolio Management Intern
   dates: June 2018 - Sept 2018
   quote: >
-   Providing data-driven solutions to protecting portfolios from unwanted market moves
+    Providing data-driven solutions to protecting portfolios from unwanted market moves
   description: | # this will include new lines to allow paragraphs
     As part of the Credit Investment Grade team, I was in charge of creating a hedging tool based on market data to help portfolio
     managers manage the risk in their portfolios. I was also exploring portfolio profiling to support the growth in demand of SRI 
