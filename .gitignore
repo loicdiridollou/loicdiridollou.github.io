@@ -1,6 +1,8 @@
-*.gem
-.bundle
-.sass-cache
-_site
-Gemfile.lock
+# Hugo build output
+public/
+resources/_gen/
+.hugo_build.lock
+
+# OS
+.DS_Store
 *.code-workspace

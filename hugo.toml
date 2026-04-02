@@ -1,0 +1,82 @@
+baseURL = 'https://quantbrew.com/'
+languageCode = 'en-us'
+title = 'Loïc Diridollou'
+theme = "nightfall"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[pagination]
+pagerSize = 5
+
+[menu]
+  [[menu.header]]
+    name = "about"
+    weight = 0
+    url = "about"
+  [[menu.header]]
+    name = "blog"
+    weight = 1
+    url = "blog"
+  [[menu.header]]
+    name = "projects"
+    weight = 2
+    url = "projects"
+
+[params]
+user = "loicdiridollou"
+hostname = "quantbrew"
+sitedescription = "Quantitative Researcher"
+openLinksInNewTab = true
+displayDateFormat = "2006-01-02"
+
+showMetadata = false
+showPublishedDate = false
+showReadingTime = false
+showTags = false
+showAuthors = false
+showCategories = false
+
+  [params.author]
+    name = "Loïc Diridollou"
+    avatar = "/images/profile.jpg"
+    avatarSize = "size-m"
+    email = "loic_diridollou@mfe.berkeley.edu"
+    avatarFirst = true
+
+  [params.styles]
+    color = "blue"
+
+[[params.social]]
+key = 0
+name = "github"
+url = "https://github.com/loicdiridollou"
+icon = "fa-brands fa-github"
+target = "_blank"
+aria = "GitHub Profile"
+
+[[params.social]]
+key = 1
+name = "linkedin"
+url = "https://linkedin.com/in/loicdiridollou"
+icon = "fa-brands fa-linkedin"
+target = "_blank"
+aria = "LinkedIn Profile"
+
+[[params.social]]
+key = 2
+name = "twitter"
+url = "https://twitter.com/loicdiridollou"
+icon = "fa-brands fa-x-twitter"
+target = "_blank"
+aria = "Twitter Profile"
+
+[[params.social]]
+key = 3
+name = "email"
+url = "mailto:loic_diridollou@mfe.berkeley.edu"
+icon = "fa-solid fa-envelope"
+target = "_blank"
+aria = "Email"
