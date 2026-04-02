@@ -32,8 +32,8 @@ jobs:
 
       - name: Install Dart Sass
         run: |
-          curl -fsSL https://github.com/sass/dart-sass/releases/download/1.86.3/dart-sass-1.86.3-linux-x64.tar.gz | tar -xz
-          sudo mv dart-sass/sass /usr/local/bin/sass
+          curl -fsSL https://github.com/sass/dart-sass/releases/download/1.86.3/dart-sass-1.86.3-linux-x64.tar.gz | tar -xz -C /usr/local/lib
+          sudo ln -s /usr/local/lib/dart-sass/sass /usr/local/bin/sass
 
       - name: Checkout
         uses: actions/checkout@v4
