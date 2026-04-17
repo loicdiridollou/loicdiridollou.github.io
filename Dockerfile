@@ -2,7 +2,7 @@ FROM alpine:3.21 AS builder
 
 ARG HUGO_VERSION=0.159.1
 
-RUN apk add --no-cache git libc6-compat && \
+RUN apk add --no-cache git libc6-compat libstdc++ && \
     wget -qO hugo.tar.gz "https://github.com/gohugoio/hugo/releases/download/v${HUGO_VERSION}/hugo_extended_${HUGO_VERSION}_linux-amd64.tar.gz" && \
     tar -xzf hugo.tar.gz hugo && \
     mv hugo /usr/local/bin/ && \
