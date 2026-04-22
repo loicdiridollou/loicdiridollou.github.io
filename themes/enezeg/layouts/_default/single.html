@@ -1,0 +1,17 @@
+{{ define "main" }}
+<article class="single reveal">
+  <div class="single-inner">
+    <header class="single-header">
+      <div class="single-meta">
+        {{ if .Date }}<time class="single-date" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>{{ end }}
+        {{ if .Params.tag }}<span class="single-tag">{{ .Params.tag }}</span>{{ end }}
+      </div>
+      <h1 class="single-title">{{ .Title }}</h1>
+      {{ if .Params.description }}<p class="single-desc">{{ .Params.description }}</p>{{ end }}
+    </header>
+    <div class="prose">
+      {{ .Content }}
+    </div>
+  </div>
+</article>
+{{ end }}

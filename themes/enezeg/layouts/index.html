@@ -1,0 +1,155 @@
+{{ define "main" }}
+
+<!-- ── Hero ── -->
+<section class="hero reveal">
+  <div class="hero-inner">
+    <div class="hero-text">
+      <p class="hero-label">{{ .Site.Params.role | default "quant · open source" }}</p>
+      <h1 class="hero-name">{{ .Site.Params.author.name | default "Loic Diridollou" }}</h1>
+      <p class="hero-bio">{{ .Site.Params.bio | default "Quantitative researcher and open source developer. Building tools at the intersection of finance and engineering." }}</p>
+      <div class="hero-actions">
+        <a href="/projects" class="btn btn-primary">Projects</a>
+        <a href="/about"    class="btn btn-ghost">About me</a>
+      </div>
+    </div>
+    <div class="hero-mark" aria-hidden="true">
+      <svg viewBox="0 0 46 46" fill="none" class="hero-svg">
+        <circle cx="11" cy="19" r="2.5" fill="currentColor" opacity="0.12"/>
+        <circle cx="17" cy="26" r="5"   fill="var(--slate)" opacity="0.7"/>
+        <circle cx="29" cy="18" r="8"   fill="currentColor" opacity="0.08"/>
+        <circle cx="37" cy="30" r="4"   fill="var(--indigo)" opacity="0.5"/>
+        <circle cx="29" cy="36" r="2.5" fill="var(--indigo)" opacity="0.25"/>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<!-- ── Projects ── -->
+<section class="section reveal" id="projects">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Projects</h2>
+      <a href="/projects" class="section-more">All projects →</a>
+    </div>
+    <div class="card-grid">
+      {{ range first 3 (where .Site.RegularPages "Section" "projects") }}
+      <a href="{{ .RelPermalink }}" class="card">
+        <div class="card-top">
+          <span class="card-tag">{{ .Params.tag | default "project" }}</span>
+          {{ if .Params.status }}<span class="card-status card-status--{{ .Params.status }}">{{ .Params.status }}</span>{{ end }}
+        </div>
+        <h3 class="card-title">{{ .Title }}</h3>
+        <p class="card-desc">{{ .Params.description | default (.Summary | truncate 120) }}</p>
+        <div class="card-footer">
+          {{ if .Params.lang }}<span class="card-lang">{{ .Params.lang }}</span>{{ end }}
+          {{ if .Params.stars }}<span class="card-stars">★ {{ .Params.stars }}</span>{{ end }}
+        </div>
+      </a>
+      {{ else }}
+      <!-- Placeholder cards -->
+      <div class="card">
+        <div class="card-top"><span class="card-tag">python</span><span class="card-status card-status--active">active</span></div>
+        <h3 class="card-title">qfactor</h3>
+        <p class="card-desc">A lightweight factor model library for equity research. Clean API, minimal dependencies.</p>
+        <div class="card-footer"><span class="card-lang">Python</span><span class="card-stars">★ 214</span></div>
+      </div>
+      <div class="card">
+        <div class="card-top"><span class="card-tag">rust</span><span class="card-status card-status--active">active</span></div>
+        <h3 class="card-title">fastbook</h3>
+        <p class="card-desc">High-performance order book implementation. Handles 10M+ events per second.</p>
+        <div class="card-footer"><span class="card-lang">Rust</span><span class="card-stars">★ 87</span></div>
+      </div>
+      <div class="card">
+        <div class="card-top"><span class="card-tag">devops</span></div>
+        <h3 class="card-title">enezeg</h3>
+        <p class="card-desc">Open source devops tooling for quant teams. Deploy and orchestrate pipelines with confidence.</p>
+        <div class="card-footer"><span class="card-lang">Go</span></div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- ── Writing ── -->
+<section class="section section--alt reveal" id="writing">
+  <div class="section-inner">
+    <div class="section-header">
+      <h2 class="section-title">Writing</h2>
+      <a href="/writing" class="section-more">All posts →</a>
+    </div>
+    <div class="post-list">
+      {{ range first 4 (where .Site.RegularPages "Section" "writing") }}
+      <a href="{{ .RelPermalink }}" class="post-row">
+        <span class="post-date">{{ .Date.Format "Jan 2006" }}</span>
+        <span class="post-title">{{ .Title }}</span>
+        <span class="post-tag">{{ .Params.tag | default "note" }}</span>
+      </a>
+      {{ else }}
+      <!-- Placeholder posts -->
+      <a href="#" class="post-row">
+        <span class="post-date">Mar 2025</span>
+        <span class="post-title">Building a real-time risk engine in Rust</span>
+        <span class="post-tag">engineering</span>
+      </a>
+      <a href="#" class="post-row">
+        <span class="post-date">Jan 2025</span>
+        <span class="post-title">Factor models are not dead</span>
+        <span class="post-tag">quant</span>
+      </a>
+      <a href="#" class="post-row">
+        <span class="post-date">Nov 2024</span>
+        <span class="post-title">Why I switched from Python to Rust for market data</span>
+        <span class="post-tag">engineering</span>
+      </a>
+      <a href="#" class="post-row">
+        <span class="post-date">Sep 2024</span>
+        <span class="post-title">Open sourcing my backtesting framework</span>
+        <span class="post-tag">open source</span>
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+<!-- ── About strip ── -->
+<section class="section reveal" id="about">
+  <div class="section-inner section-inner--split">
+    <div class="about-text">
+      <h2 class="section-title">About</h2>
+      <p class="about-body">{{ .Site.Params.about | default "Quant by day, open source developer by night. I build tools that make quantitative finance more accessible and reproducible — cleaner libraries, better tooling, more transparent methods." }}</p>
+      <a href="/about" class="btn btn-ghost" style="margin-top: 24px;">Full bio →</a>
+    </div>
+    <div class="about-stack">
+      <p class="stack-label">Currently working with</p>
+      <div class="stack-tags">
+        {{ range (.Site.Params.stack | default (slice "Python" "Rust" "Go" "PostgreSQL" "dbt" "Kubernetes")) }}
+        <span class="stack-tag">{{ . }}</span>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── Contact ── -->
+<section class="section section--alt reveal" id="contact">
+  <div class="section-inner section-inner--narrow">
+    <h2 class="section-title">Get in touch</h2>
+    <p class="contact-body">{{ .Site.Params.contactNote | default "I'm always happy to talk about quant finance, open source, or interesting engineering problems." }}</p>
+    <div class="contact-links">
+      {{ with .Site.Params.author.email }}
+      <a href="mailto:{{ . }}" class="contact-link">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.5"/><path d="M1 5l7 5 7-5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+        {{ . }}
+      </a>
+      {{ end }}
+      {{ with .Site.Params.user }}
+      <a href="https://github.com/{{ . }}" class="contact-link" target="_blank" rel="noopener">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg>
+        github.com/{{ . }}
+      </a>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}

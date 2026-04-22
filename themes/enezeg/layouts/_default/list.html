@@ -1,0 +1,41 @@
+{{ define "main" }}
+<section class="list-page reveal">
+  <div class="section-inner">
+    <header class="list-header">
+      <h1 class="list-title">{{ .Title }}</h1>
+      {{ if .Params.description }}<p class="list-desc">{{ .Params.description }}</p>{{ end }}
+    </header>
+
+    {{ if eq .Section "projects" }}
+    <div class="card-grid">
+      {{ range .Pages }}
+      <a href="{{ .RelPermalink }}" class="card">
+        <div class="card-top">
+          <span class="card-tag">{{ .Params.tag | default "project" }}</span>
+          {{ if .Params.status }}<span class="card-status card-status--{{ .Params.status }}">{{ .Params.status }}</span>{{ end }}
+        </div>
+        <h3 class="card-title">{{ .Title }}</h3>
+        <p class="card-desc">{{ .Params.description | default (.Summary | truncate 120) }}</p>
+        <div class="card-footer">
+          {{ if .Params.lang }}<span class="card-lang">{{ .Params.lang }}</span>{{ end }}
+          {{ if .Params.stars }}<span class="card-stars">★ {{ .Params.stars }}</span>{{ end }}
+        </div>
+      </a>
+      {{ end }}
+    </div>
+
+    {{ else }}
+    <div class="post-list">
+      {{ range .Pages }}
+      <a href="{{ .RelPermalink }}" class="post-row">
+        <span class="post-date">{{ .Date.Format "Jan 2006" }}</span>
+        <span class="post-title">{{ .Title }}</span>
+        {{ if .Params.tag }}<span class="post-tag">{{ .Params.tag }}</span>{{ end }}
+      </a>
+      {{ end }}
+    </div>
+    {{ end }}
+
+  </div>
+</section>
+{{ end }}

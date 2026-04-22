@@ -1,0 +1,46 @@
+baseURL = "https://enezeg.com"
+languageCode = "en-us"
+title = "enezeg"
+theme = "enezeg"
+paginate = 10
+
+[params]
+  author      = "Loic Diridollou"
+  description = "Quantitative researcher and open source developer."
+  role        = "quant · open source"
+  bio         = "Quantitative researcher and open source developer. Building tools at the intersection of finance and engineering."
+  about       = "Quant by day, open source developer by night. I build tools that make quantitative finance more accessible and reproducible — cleaner libraries, better tooling, more transparent methods."
+  contactNote = "I'm always happy to talk about quant finance, open source, or interesting engineering problems."
+  email       = "loic@enezeg.com"
+  github      = "loicdiridollou"
+  stack       = ["Python", "Rust", "Go", "PostgreSQL", "dbt", "Kubernetes"]
+
+[menu]
+  [[menu.main]]
+    name   = "about"
+    url    = "/about"
+    weight = 1
+  [[menu.main]]
+    name   = "projects"
+    url    = "/projects"
+    weight = 2
+  [[menu.main]]
+    name   = "writing"
+    url    = "/writing"
+    weight = 3
+  [[menu.main]]
+    name   = "contact"
+    url    = "/contact"
+    weight = 4
+
+[markup]
+  [markup.highlight]
+    style              = "dracula"
+    lineNos            = false
+    codeFences         = true
+    noClasses          = true
+  [markup.goldmark.renderer]
+    unsafe = true
+
+[build]
+  writeStats = true
