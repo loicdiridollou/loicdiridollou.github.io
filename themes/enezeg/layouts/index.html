@@ -32,39 +32,20 @@
       <a href="/projects" class="section-more">All projects →</a>
     </div>
     <div class="card-grid">
-      {{ range first 3 (where .Site.RegularPages "Section" "projects") }}
-      <a href="{{ .RelPermalink }}" class="card">
+      {{ $topProjects := .Site.GetPage "top_projects" }}
+      {{ range first 3 $topProjects.Params.projects }}
+      {{ if .github }}<a href="{{ .github }}" target="_blank" rel="noopener" class="card">{{ else }}<div class="card">{{ end }}
         <div class="card-top">
-          <span class="card-tag">{{ .Params.tag | default "project" }}</span>
-          {{ if .Params.status }}<span class="card-status card-status--{{ .Params.status }}">{{ .Params.status }}</span>{{ end }}
+          <span class="card-tag">{{ .tag | default "project" }}</span>
+          {{ if .status }}<span class="card-status card-status--{{ .status }}">{{ .status }}</span>{{ end }}
         </div>
-        <h3 class="card-title">{{ .Title }}</h3>
-        <p class="card-desc">{{ .Params.description | default (.Summary | truncate 120) }}</p>
+        <h3 class="card-title">{{ .title }}</h3>
+        <p class="card-desc">{{ .description }}</p>
         <div class="card-footer">
-          {{ if .Params.lang }}<span class="card-lang">{{ .Params.lang }}</span>{{ end }}
-          {{ if .Params.stars }}<span class="card-stars">★ {{ .Params.stars }}</span>{{ end }}
+          {{ if .lang }}<span class="card-lang">{{ .lang }}</span>{{ end }}
+          {{ if .stars }}<span class="card-stars">★ {{ .stars }}</span>{{ end }}
         </div>
-      </a>
-      {{ else }}
-      <!-- Placeholder cards -->
-      <div class="card">
-        <div class="card-top"><span class="card-tag">python</span><span class="card-status card-status--active">active</span></div>
-        <h3 class="card-title">qfactor</h3>
-        <p class="card-desc">A lightweight factor model library for equity research. Clean API, minimal dependencies.</p>
-        <div class="card-footer"><span class="card-lang">Python</span><span class="card-stars">★ 214</span></div>
-      </div>
-      <div class="card">
-        <div class="card-top"><span class="card-tag">rust</span><span class="card-status card-status--active">active</span></div>
-        <h3 class="card-title">fastbook</h3>
-        <p class="card-desc">High-performance order book implementation. Handles 10M+ events per second.</p>
-        <div class="card-footer"><span class="card-lang">Rust</span><span class="card-stars">★ 87</span></div>
-      </div>
-      <div class="card">
-        <div class="card-top"><span class="card-tag">devops</span></div>
-        <h3 class="card-title">enezeg</h3>
-        <p class="card-desc">Open source devops tooling for quant teams. Deploy and orchestrate pipelines with confidence.</p>
-        <div class="card-footer"><span class="card-lang">Go</span></div>
-      </div>
+      {{ if .github }}</a>{{ else }}</div>{{ end }}
       {{ end }}
     </div>
   </div>
