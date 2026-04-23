@@ -1,23 +1,26 @@
 ---
 title: "Top Projects"
 projects:
-  - title: "qfactor"
-    description: "A lightweight factor model library for equity research. Clean API, minimal dependencies."
+  - title: "pandas-stubs"
+    description: "Public type stubs for pandas"
     tag: "python"
     lang: "Python"
-    stars: 214
+    stars: 314
     status: "active"
-    github: "https://github.com/loicdiridollou/qfactor"
-  - title: "fastbook"
-    description: "High-performance order book implementation. Handles 10M+ events per second."
-    tag: "rust"
-    lang: "Rust"
-    stars: 87
+    github: "https://github.com/pandas-dev/pandas-stubs"
+  - title: "strava-notenn"
+    description:
+      " Turn your Strava activities into receipt-style summaries with custom
+      performance content"
+    tag: "python"
+    lang: "Python"
     status: "active"
-    github: ""
-  - title: "enezeg"
-    description: "Open source devops tooling for quant teams. Deploy and orchestrate pipelines with confidence."
+    github: "https://github.com/loicdiridollou/strava-notenn"
+  - title: "coverviz"
+    description:
+      "Package to visualize code coverage with better granularity and
+      higher-level overview in codebases compared to coverage package. "
     tag: "devops"
-    lang: "Go"
-    github: ""
+    lang: "Python"
+    github: "https://github.com/loicdiridollou/coverviz"
 ---

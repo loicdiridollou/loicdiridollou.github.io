@@ -13,7 +13,6 @@ paginate = 10
   contactNote = "I'm always happy to talk about quant finance, open source, or interesting engineering problems."
   email       = "loic@enezeg.com"
   github      = "loicdiridollou"
-  stack       = ["Python", "Rust", "Go", "PostgreSQL", "dbt", "Kubernetes"]
 
 [menu]
   [[menu.main]]

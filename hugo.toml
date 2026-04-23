@@ -26,6 +26,7 @@ pagerSize = 5
     url = "projects"
 
 [params]
+stack = ["Python", "Rust", "Go", "PostgreSQL", "Kubernetes"]
 user = "loicdiridollou"
 hostname = "quantbrew"
 sitedescription = "Quantitative Researcher"
@@ -43,7 +44,7 @@ showCategories = false
     name = "Loïc Diridollou"
     avatar = "/images/profile.jpg"
     avatarSize = "size-m"
-    email = "loic_diridollou@mfe.berkeley.edu"
+    email = "loic@enezeg.com"
     avatarFirst = true
 
   [params.styles]

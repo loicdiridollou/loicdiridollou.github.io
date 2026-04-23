@@ -237,12 +237,11 @@ button { cursor: pointer; border: none; background: none; font-family: inherit; 
 }
 
 .hero-mark {
-  opacity: 0.6;
 }
 
 .hero-svg {
-  width: 180px;
-  height: 180px;
+  width: 360px;
+  height: 360px;
   color: var(--ink);
 }
 
