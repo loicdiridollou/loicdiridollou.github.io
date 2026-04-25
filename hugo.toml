@@ -1,4 +1,4 @@
-baseURL = 'https://quantbrew.com/'
+baseURL = 'https://enezeg.com/'
 languageCode = 'en-us'
 title = 'Loïc Diridollou'
 theme = "enezeg"
@@ -28,7 +28,7 @@ pagerSize = 5
 [params]
 stack = ["Python", "Rust", "Go", "PostgreSQL", "Kubernetes"]
 user = "loicdiridollou"
-hostname = "quantbrew"
+hostname = "enezeg"
 sitedescription = "Quantitative Researcher"
 openLinksInNewTab = true
 displayDateFormat = "2006-01-02"
