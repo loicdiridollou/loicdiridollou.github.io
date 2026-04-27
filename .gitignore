@@ -6,3 +6,7 @@ resources/_gen/
 # OS
 .DS_Store
 *.code-workspace
+
+**/letter.toml
+
+.python-version
